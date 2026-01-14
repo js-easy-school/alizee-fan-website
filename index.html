@@ -932,11 +932,24 @@
           max-width: 400px;
           margin: 0 auto;
         }
+
+        .section {
+          padding: 6rem 3rem;
+        }
+
+        .section-title {
+          font-size: clamp(2.5rem, 6vw, 4rem);
+        }
       }
 
       @media (max-width: 768px) {
         .nav {
-          padding: 1rem 2rem;
+          padding: 1rem 1.5rem;
+        }
+
+        .nav-logo {
+          font-size: 1.5rem;
+          letter-spacing: 0.2em;
         }
 
         .nav-links {
@@ -948,7 +961,15 @@
         }
 
         .section {
-          padding: 4rem 2rem;
+          padding: 4rem 1.5rem;
+        }
+
+        .section-header {
+          margin-bottom: 3rem;
+        }
+
+        .section-title {
+          font-size: clamp(2rem, 8vw, 3rem);
         }
 
         .album-tabs {
@@ -965,12 +986,36 @@
           font-size: 2rem;
         }
 
+        .album-info {
+          text-align: center;
+        }
+
+        .album-credits {
+          font-size: 0.9rem;
+        }
+
         .tours-grid {
           grid-template-columns: 1fr;
         }
 
+        .tour-card {
+          margin: 0 -0.5rem;
+        }
+
+        .tour-header {
+          padding: 1.5rem;
+        }
+
+        .tour-dates {
+          padding: 1rem 1.5rem;
+        }
+
+        .tour-name {
+          font-size: 1.4rem;
+        }
+
         .hero {
-          padding-bottom: 4rem;
+          padding: 6rem 1.5rem 4rem;
         }
 
         .hero-bg img {
@@ -978,20 +1023,213 @@
         }
 
         .hero-title {
-          letter-spacing: 0.15em;
+          letter-spacing: 0.1em;
+          font-size: clamp(3rem, 15vw, 8rem);
         }
 
         .hero-subtitle {
-          font-size: 1rem;
-          letter-spacing: 0.2em;
+          font-size: 0.9rem;
+          letter-spacing: 0.15em;
+          margin-bottom: 2rem;
+        }
+
+        .hero-cta {
+          flex-direction: column;
+          gap: 1rem;
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+
+        .btn {
+          width: 100%;
+          padding: 1rem 2rem;
+          font-size: 0.85rem;
         }
 
         .track-links {
           display: none;
         }
 
+        .track {
+          font-size: 1rem;
+          padding: 0.6rem 0;
+        }
+
+        .track::before {
+          font-size: 0.9rem;
+          margin-right: 0.8rem;
+          min-width: 1.5rem;
+        }
+
         .vinyl-grid {
           grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+
+        .collab-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .collab-item {
+          padding: 1.2rem;
+        }
+
+        .bio-text {
+          font-size: 1rem;
+          line-height: 1.8;
+        }
+
+        .bio-highlight {
+          font-size: 1.4rem;
+          padding-left: 1.5rem;
+          margin: 2rem 0;
+        }
+
+        .bio-image-container::before {
+          top: -10px;
+          left: -10px;
+        }
+
+        .footer {
+          padding: 3rem 1.5rem;
+        }
+
+        .footer-logo {
+          font-size: 1.6rem;
+        }
+
+        .social-links {
+          flex-wrap: wrap;
+          gap: 1rem;
+          justify-content: center;
+        }
+
+        .social-links a {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .nav {
+          padding: 1rem;
+        }
+
+        .nav-logo {
+          font-size: 1.3rem;
+          letter-spacing: 0.15em;
+        }
+
+        .section {
+          padding: 3rem 1rem;
+        }
+
+        .section-title {
+          font-size: clamp(1.8rem, 10vw, 2.5rem);
+        }
+
+        .section-label {
+          font-size: 0.65rem;
+          letter-spacing: 0.2em;
+        }
+
+        .hero {
+          padding: 5rem 1rem 3rem;
+        }
+
+        .hero-title {
+          font-size: clamp(2.5rem, 18vw, 5rem);
+          letter-spacing: 0.08em;
+        }
+
+        .hero-subtitle {
+          font-size: 0.8rem;
+          letter-spacing: 0.1em;
+        }
+
+        .btn {
+          padding: 0.9rem 1.5rem;
+          font-size: 0.8rem;
+        }
+
+        .album-cover-container {
+          max-width: 250px;
+        }
+
+        .album-title {
+          font-size: 1.6rem;
+        }
+
+        .tour-header {
+          padding: 1.2rem;
+        }
+
+        .tour-name {
+          font-size: 1.2rem;
+        }
+
+        .tour-dates {
+          padding: 0.8rem 1.2rem;
+        }
+
+        .tour-date {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.3rem;
+          padding: 0.6rem 0;
+        }
+
+        .tour-date-info {
+          font-size: 0.8rem;
+        }
+
+        .tour-date-venue {
+          font-size: 0.9rem;
+        }
+
+        .vinyl-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 0.5rem;
+        }
+
+        .vinyl-item {
+          aspect-ratio: 1;
+        }
+
+        .track {
+          font-size: 0.9rem;
+        }
+
+        .track::before {
+          font-size: 0.8rem;
+        }
+
+        .bio-image-container::before {
+          display: none;
+        }
+
+        .bio-text p:first-of-type::first-letter {
+          font-size: 3rem;
+        }
+
+        .footer-logo {
+          font-size: 1.4rem;
+        }
+
+        .social-links {
+          gap: 0.8rem;
+        }
+
+        .social-links a {
+          font-size: 0.75rem;
+        }
+
+        .footer-text {
+          font-size: 0.7rem;
+        }
+
+        .scroll-indicator {
+          display: none;
         }
       }
 

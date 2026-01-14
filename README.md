@@ -18,7 +18,7 @@ This is a gift website created for French singer Alizée.
 
 ## Created by
 
-Andrew Mazunin  
+Andrew Mazunin
 Telegram: @alexxxm
 
 ---
